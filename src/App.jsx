@@ -16,7 +16,6 @@ function App() {
             <Sort />
           </div>
         </div>
-
         <h2 className="content__title">All notebooks</h2>
         <NoteBlock />
       </div>
