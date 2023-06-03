@@ -5,9 +5,11 @@ import Categories from './components/Categories';
 import Sort from './components/Sort';
 import NoteBlock from './components/NoteBlock';
 
+import './scss/app.scss';
+
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper">
       <Header />
       <div className="content">
         <div className="container">
@@ -17,7 +19,12 @@ function App() {
           </div>
         </div>
         <h2 className="content__title">All notebooks</h2>
-        <NoteBlock />
+        <div className="content__items">
+          <NoteBlock />
+          <NoteBlock />
+          <NoteBlock />
+          <NoteBlock />
+        </div>
       </div>
     </div>
   );
