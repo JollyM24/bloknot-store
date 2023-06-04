@@ -1,5 +1,6 @@
 function Sort() {
   return (
+    // разобраться с выпадающим списком
     <div className="sort">
       <div className="sort__label">
         <b>Sort by:</b>

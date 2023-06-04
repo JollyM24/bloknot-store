@@ -1,5 +1,5 @@
 @import './variables';
-@import './libs/normailze';
+@import './libs/normalize';
 @import './components/all';
 
 body {
@@ -29,7 +29,7 @@ body {
     text-align: center;
 
     h2 {
-      font-size: 32px;
+      // font-size: 32px;
       font-weight: 700;
       margin-bottom: 10px;
     }
@@ -41,7 +41,7 @@ body {
 
   &__title {
     font-weight: 800;
-    font-size: 38px;
+    font-size: 34px;
     margin-top: 60px;
     margin-bottom: 50px;
   }
@@ -82,7 +82,8 @@ body {
 
       .sort {
         padding-left: 20px;
-        b {
+
+        &__popup {
           display: none;
         }
       }
@@ -109,4 +110,13 @@ body {
 
 .container {
   width: $container-width;
+  margin: 0 auto;
+
+  &--cart {
+    max-width: 820px;
+    margin: 90px auto;
+    .content__title {
+      margin: 0;
+    }
+  }
 }
