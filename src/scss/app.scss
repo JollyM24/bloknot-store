@@ -31,7 +31,7 @@ body {
     h2 {
       // font-size: 32px;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin: 10px;
     }
 
     p {
@@ -42,13 +42,12 @@ body {
   &__title {
     font-weight: 800;
     font-size: 34px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin: 60px;
   }
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(4, 1rf);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 11px;
 
@@ -70,6 +69,12 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    .sort {
+      &__popup {
+        display: none;
+      }
+    }
+
     @media (max-width: 1260px) {
       .categories {
         width: 100%;
@@ -82,10 +87,6 @@ body {
 
       .sort {
         padding-left: 20px;
-
-        &__popup {
-          display: none;
-        }
       }
     }
 
